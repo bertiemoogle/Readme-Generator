@@ -1,6 +1,7 @@
 import inquirer from "inquirer";
 import fs from "fs/promises";
 
+
 const queries = await inquirer
     .prompt([
         {
@@ -58,7 +59,10 @@ const queries = await inquirer
 
 let readmeText = 
 `# ${queries.title}
-## ${queries.description}
+## License Badge
+${licenseBadge()}
+## Description
+${queries.description}
 ## Table of Contents:
 * Installation
 * Usage
@@ -82,3 +86,15 @@ ${queries.questions}
 ${queries.githubURL}`
 
 fs.writeFile("generatedREADME.md", readmeText);
+
+console.log(queries.license);
+
+function licenseBadge() {
+    if (queries.license === "MIT") {
+        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    } else if (queries.license === "Apache") {
+        return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    } else if (queries.license === "Boost") {
+        return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
+    }
+}
