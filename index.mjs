@@ -64,30 +64,35 @@ ${licenseBadge()}
 ## Description
 ${queries.description}
 ## Table of Contents:
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
+* Installation [Installation](## Installation)
+* Usage [Usage](## Usage)
+* License [License](## License)
+* Contributing [Contributing](## Contributing)
+* Tests [Tests](## Tests)
+* Questions [Questions](## Questions)
+---
 ## Installation
 ${queries.installation}
+---
 ## Usage
 ${queries.usage}
+---
 ## License
 ${queries.license}
+---
 ## Contributing
 ${queries.contributing}
+---
 ## Tests
 ${queries.tests}
+---
 ## Questions
 ${queries.questions}
+---
 ## Github
 ${queries.githubURL}`
 
 fs.writeFile("generatedREADME.md", readmeText);
-
-console.log(queries.license);
 
 function licenseBadge() {
     if (queries.license === "MIT") {
@@ -97,4 +102,4 @@ function licenseBadge() {
     } else if (queries.license === "Boost") {
         return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
     }
-}
+};
