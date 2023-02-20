@@ -64,33 +64,34 @@ ${licenseBadge()}
 ## Description
 ${queries.description}
 ## Table of Contents:
-* Installation [Installation](## Installation)
-* Usage [Usage](## Usage)
-* License [License](## License)
-* Contributing [Contributing](## Contributing)
-* Tests [Tests](## Tests)
-* Questions [Questions](## Questions)
----
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+* [Github](#github)
+
 ## Installation
 ${queries.installation}
----
+
 ## Usage
 ${queries.usage}
----
+
 ## License
 ${queries.license}
----
+
 ## Contributing
 ${queries.contributing}
----
+
 ## Tests
 ${queries.tests}
----
+
 ## Questions
 ${queries.questions}
----
+
 ## Github
-${queries.githubURL}`
+${queries.github}`
 
 fs.writeFile("generatedREADME.md", readmeText);
 
