@@ -1,5 +1,5 @@
 # README Generator
-![Demonstration Video](./Video/readMeGenerator.webm)
+![Demonstration Video](https://github.com/bertiemoogle/Readme-Generator/blob/main/Video/readMeGenerator.webm?raw=true)
 
 ## Tech Used
 * JavaScript
