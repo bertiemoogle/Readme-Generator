@@ -1,6 +1,9 @@
+// Import Inquirer and File System
+
 import inquirer from "inquirer";
 import fs from "fs/promises";
 
+// Prompts for the user to respond to
 
 const queries = await inquirer
     .prompt([
@@ -56,6 +59,7 @@ const queries = await inquirer
         },
     ])
 
+// Main body of the generated README file
 
 let readmeText = 
 `# ${queries.title}
@@ -94,6 +98,8 @@ ${queries.questions}
 ${queries.github}`
 
 fs.writeFile("generatedREADME.md", readmeText);
+
+// Function to place the license badge at the top of the page
 
 function licenseBadge() {
     if (queries.license === "MIT") {
