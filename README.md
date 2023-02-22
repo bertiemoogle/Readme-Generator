@@ -1,5 +1,5 @@
 # README Generator
-![screenshot](./Video/readMeGenerator.webm)
+![Demonstration Video](./Video/readMeGenerator.webm)
 
 ## Tech Used
 * JavaScript
