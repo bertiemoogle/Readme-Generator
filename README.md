@@ -1,5 +1,6 @@
 # README Generator
 ## Demonstration Video
+![Screenshot](./Video.screenshot.png)
 <https://github.com/bertiemoogle/Readme-Generator/blob/main/Video/readMeGenerator.webm?raw=true>
 
 ## Tech Used
